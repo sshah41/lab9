@@ -24,10 +24,10 @@ Specifically:
 1. Complete the TODO items in the `LinkedStack` implementation until the tests pass.
 1. Complete the main class `ReverseLines`, which reads successive input lines until EOF and then prints themin reverse order, using a suitable stack instance.
 1. Answer the following questions:
-  - Why does `LinkedStack` not require an explicit constructor?
-  - What is the time and (extra) space complexity of each of the `LinkedStack` methods?
-  - How else (not using `Node`) could we have implemented `LinkedStack` in such a way that it is still based on a linked list but the `asList` method uses constant time and space?
-  - Is it better for `push` and `pop` to return the item or the stack itself?
+   - Why does `LinkedStack` not require an explicit constructor?
+   - What is the time and (extra) space complexity of each of the `LinkedStack` methods?
+   - How else (not using `Node`) could we have implemented `LinkedStack` in such a way that it is still based on a linked list but the `asList` method uses constant time and space?
+   - Is it better for `push` and `pop` to return the item or the stack itself?
     Briefly discuss the pros and cons of each design.
 
 # Grading
