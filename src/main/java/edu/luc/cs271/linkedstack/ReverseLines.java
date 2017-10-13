@@ -1,5 +1,7 @@
 package edu.luc.cs271.linkedstack;
 
+import java.util.Scanner;
+
 public class ReverseLines {
 
 	public static void main(String[] args) {
@@ -7,8 +9,9 @@ public class ReverseLines {
 
 
 
-		String input;
-		while ((input = System.console().readLine()) != null) {
+    final Scanner input = new Scanner(System.in);
+		String line;
+		while ((line = input.nextLine()) != null) {
 
 
 
