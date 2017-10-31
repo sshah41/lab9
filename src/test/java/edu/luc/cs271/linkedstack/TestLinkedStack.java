@@ -78,5 +78,27 @@ public class TestLinkedStack {
     final List<String> list = fixture.asList();
     assertEquals(2, list.size());
     assertEquals(Arrays.asList(value2, value1), list);
+    //ADDED FOR LAB7(week 9)
+    final List<String> list2 = fixture.asList();
+    assertEquals(2, list2.size());
+  }
+
+  //ADDED FOR LAB7(week 9)
+  @Test
+  public void testAsFifoListEmpty() {
+    assertEquals(0, fixture.asFifoList().size());
+  }
+  //ADDED FOR LAB7(week 9)
+  @Test
+  public void testAsFifoListNonempty() {
+    final String value1 = "hello";
+    final String value2 = "world";
+    fixture.push(value1);
+    fixture.push(value2);
+    final List<String> list = fixture.asFifoList();
+    assertEquals(2, list.size());
+    assertEquals(Arrays.asList(value1, value2), list);
+    final List<String> list2 = fixture.asFifoList();
+    assertEquals(2, list2.size());
   }
 }
