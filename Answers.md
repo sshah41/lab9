@@ -11,6 +11,6 @@
 - private void populateFifoList O(n) n being number of indexes in curr
 - ReservesLine.printReverse O(n) n being number of lines in the input
  4. Which of these methods can be implemented using while loops?
-- private void populateList yes
-- private void populateFifoList yes
-- ReservesLine.printReverse yes
+- private void populateList yes, however you need to make sure it does not go to an infinite loop
+- private void populateFifoList yes, however you need to make sure it does not go to an infinite loop.
+- ReservesLine.printReverse yes.
