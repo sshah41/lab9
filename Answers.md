@@ -1,14 +1,16 @@
-1. Why does `LinkedStack` not require an explicit constructor?
-    - The reason it does not require an explicit constructor is because it uses an implicit constructor.
-2. What is the time and (extra) space complexity of each of the `LinkedStack` methods, as well as `ReverseLines.main`?
-    - The Time complexity should be the same (that is O(1).)
-    - Since all insertions and deletions are done at one end.
-    - For the LinkedStack, it uses almost exactly as much space as needed.
-    - However, extra storage is needed for the links in LinkedStack.
-    - ReversedLines.main should have the same time complexity.
-3. How else (not using `Node`) could we have implemented `LinkedStack` in such a way that it is still based on a linked list but the `asList` method uses constant time and space?
-    - We could have implemented LinkedStack using an object on any class that implements the List interface (simplest being ArrayList).
-    - Since time and space (almost) are going to be constant.
-4. Is it better for `push` and `pop` to return the item or the stack itself?
-    Briefly discuss the pros and cons of each design.
-    - It depends on the design of your program. If you need to inspect and use each element that it should return the item. If you want to return the entire stack then you can push or pop the entire stack, although that may not be very efficient.
+1. What is the purpose of the various auxiliary methods populateList, populateFifoList, and ReverseLines.printReverse?
+- private void populateList to perform the recursion method and take an argument from the node and perform a function on it.
+- private void populateFifoList to perform recursion method to perform the recursion method and take an argument from the node and perform a function on it.
+- ReservesLine.printReverse to perform recursion method to perform the recursion method and take an argument from the node and perform a function on it.
+2. Why do these methods need to have arguments, and how does the argument change from one recursive call to the next?
+- private void populateList: the method checks if the arguments is null, if it not null it performs the function and recalls the next argument by calling the method within the method.
+- private void populateFifoList: the method checks if the arguments is null, if it not null it performs the function and recalls the next argument by calling the method within the method.
+- ReservesLine.printReverse: the method checks if the arguments is null, if it not null it performs the function and recalls the next argument by calling the method within the method.
+ 3. What are the time and space complexity of each of the populateList populateFifoList methods, as well as ReverseLines.printReverse?
+- private void populateList O(n)
+- private void populateFifoList O(n)
+- ReservesLine.printReverse O(n)
+ 4. Which of these methods can be implemented using while loops?
+- private void populateList yes
+- private void populateFifoList yes
+- ReservesLine.printReverse possibly
