@@ -7,10 +7,10 @@
 - private void populateFifoList: the method checks if the arguments is null, if it not null it performs the function and recalls the next argument by calling the method within the method.
 - ReservesLine.printReverse: the method checks if the arguments is null, if it not null it performs the function and recalls the next argument by calling the method within the method.
  3. What are the time and space complexity of each of the populateList populateFifoList methods, as well as ReverseLines.printReverse?
-- private void populateList O(n)
-- private void populateFifoList O(n)
-- ReservesLine.printReverse O(n)
+- private void populateList O(n) n being number of indexes in curr
+- private void populateFifoList O(n) n being number of indexes in curr
+- ReservesLine.printReverse O(n) n being number of lines in the input
  4. Which of these methods can be implemented using while loops?
 - private void populateList yes
 - private void populateFifoList yes
-- ReservesLine.printReverse possibly
+- ReservesLine.printReverse yes
